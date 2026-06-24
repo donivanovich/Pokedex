@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(14px, 1vw, 18px);
+}
+
+body {
+    margin: 0;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: clamp(1rem, 2vw, 2rem);
+    color: #fff;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.pokemon-info h2{
+    text-transform: capitalize;
+    font-size: clamp(0.75rem, 3vw, 2rem);
+    margin: 0.5rem 0;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    padding: clamp(1rem, 2vw, 2rem);
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: clamp(0.1rem, 0.5vw, 0.5rem);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.buttons-container button {
+    flex: 1;
+    padding: clamp(0.4rem, 1vw, 0.6rem);
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.buttons-container button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen {
+    width: clamp(120px, 20vw, 200px);
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: #fff;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .details-container {
+        flex-direction: column;
+    }
+
+    .card-container,
+    .info-container {
+        width: 100%;
+    }
+
+    .info-container {
+        margin-top: 1rem;
+    }
+}

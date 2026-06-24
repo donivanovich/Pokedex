@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo blanco -->
+  <circle cx="50" cy="50" r="48" fill="#ffffff" stroke="#000000" stroke-width="4"></circle>
+
+  <!-- Parte superior roja -->
+  <path d="M2,50 A48,48 0 0,1 98,50 L50,50 Z" fill="#ff1c1c"></path>
+
+  <!-- Línea central -->
+  <rect x="2" y="47" width="96" height="6" fill="#000000"></rect>
+
+  <!-- Botón exterior -->
+  <circle cx="50" cy="50" r="12" fill="#ffffff" stroke="#000000" stroke-width="4"></circle>
+
+  <!-- Botón interior -->
+  <circle cx="50" cy="50" r="5" fill="#000000"></circle>
+</svg>

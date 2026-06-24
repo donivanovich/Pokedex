@@ -1,0 +1,75 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.input label {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: bold;
+  font-size: clamp(0.1rem, 4.5vw);
+}
+
+.input select {
+  margin: 20px;
+  font-weight: bold;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #000;
+  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  margin: clamp(10px, 5%, 20px);;
+  transition: all 0.2s;
+}
+
+
+.input select:hover,
+.input select:focus {
+  border-color: #aaa;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.close-filters {
+  display: none;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+.close-filters:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .close-filters {
+    display: block;
+    margin: 20px auto;
+    width: clamp(25px, 5vw, 30px);
+    height: clamp(25px, 5vw, 30px);
+  }
+
+  .icon{
+    width: clamp(20px, 5vw, 30px);
+    height: clamp(20px, 5vw, 30px);
+  }
+}

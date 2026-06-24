@@ -1,0 +1,58 @@
+{
+  "regions": [
+    {
+      "id": 1,
+      "name": "Kanto",
+      "first_pokemon_id": 1,
+      "last_pokemon_id": 151
+    },
+    {
+      "id": 2,
+      "name": "Johto",
+      "first_pokemon_id": 152,
+      "last_pokemon_id": 251
+    },
+    {
+      "id": 3,
+      "name": "Hoenn",
+      "first_pokemon_id": 252,
+      "last_pokemon_id": 386
+    },
+    {
+      "id": 4,
+      "name": "Sinnoh",
+      "first_pokemon_id": 387,
+      "last_pokemon_id": 493
+    },
+    {
+      "id": 5,
+      "name": "Teselia",
+      "first_pokemon_id": 494,
+      "last_pokemon_id": 649
+    },
+    {
+      "id": 6,
+      "name": "Kalos",
+      "first_pokemon_id": 650,
+      "last_pokemon_id": 721
+    },
+    {
+      "id": 7,
+      "name": "Alola",
+      "first_pokemon_id": 722,
+      "last_pokemon_id": 809
+    },
+    {
+      "id": 8,
+      "name": "Galar",
+      "first_pokemon_id": 810,
+      "last_pokemon_id": 905
+    },
+    {
+      "id": 9,
+      "name": "Paldea",
+      "first_pokemon_id": 906,
+      "last_pokemon_id": 1025
+    }
+  ]
+}

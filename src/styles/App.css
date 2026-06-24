@@ -1,0 +1,69 @@
+.app-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.filters-container,
+.menu-container {
+  width: 17%;
+  height: 100%;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+}
+
+.pokemon-container {
+  width: 66%;
+  height: 100%;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+
+.overlay {
+  z-index: 900;
+  pointer-events: auto;
+}
+
+@media (max-width: 1024px) {
+  .filters-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(48,48,48);
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  }
+  .filters-container.open { transform: translateX(0); }
+
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(48,48,48);
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.3);
+  }
+  .menu-container.open { transform: translateX(0); }
+
+  .pokemon-container { width: 100%; }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 900;
+  }
+}

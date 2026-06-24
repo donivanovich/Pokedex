@@ -1,0 +1,124 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+main ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+main li {
+  background-color: #F9F9F9;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 0;
+  min-width: 140px;
+  max-width: 100%;
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+main li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.heart-container {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.team-container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+main li:hover .heart-container, main li:hover .team-container {
+  display: flex;
+}
+
+main img {
+  width: 96px;
+  height: 96px;
+  transform: scale(1.2);
+}
+
+main strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #495057;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+}
+
+main h6 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+main p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #868e96;
+}
+
+.types-container {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.type-badge {
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+h4, h5 {
+  margin: 0;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  main { padding: 20px; }
+  main ul { gap: 10px; }
+  main li { min-width: 110px; padding: 10px; }
+  main img { width: 72px; height: 72px; }
+  main strong, main h6, main p { font-size: 0.7rem; }
+}
+
+@media (max-width: 768px) {
+  .heart-container { display: flex; }
+  .team-container { display: flex; }
+}

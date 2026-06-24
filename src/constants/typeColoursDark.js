@@ -1,0 +1,20 @@
+export const typeColorsDark = {
+  Normal: "#6C757F",
+  Fire: "#CC7039",
+  Water: "#3661A2",
+  Electric: "#C2A81F",
+  Grass: "#4F8040",
+  Ice: "#4F9C99",
+  Fighting: "#9C2C4D",
+  Poison: "#8350A3",
+  Ground: "#B25A31",
+  Flying: "#6B8EB5",
+  Psychic: "#C05A4F",
+  Bug: "#6B9130",
+  Rock: "#998B6A",
+  Ghost: "#383F65",
+  Dragon: "#04386A",
+  Dark: "#3E3A48",
+  Steel: "#496978",
+  Fairy: "#B764B5"
+};

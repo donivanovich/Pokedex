@@ -1,0 +1,111 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.close-menu {
+  display: none;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+.close-menu:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-color: #fff;
+}
+
+.menu-user {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.menu-user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 2px solid white;
+}
+
+.menu-user-name {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.2rem;
+  text-align: center;
+}
+
+.menu-user-username {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.logout-button {
+  margin-top: auto;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #e60023;
+  color: white;
+  max-width: 200px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #b8001c;
+  transform: translateY(-1px);
+}
+
+.logout-button:active {
+  transform: scale(0.97);
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  grid-template-rows: repeat(3, auto);   /* 3 filas */
+  gap: 10px;
+  justify-items: center;
+  margin: 20px 0;
+}
+
+.team-pokemon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .close-menu {
+    display: block;
+    margin: 20px auto;
+    width: clamp(25px, 5vw, 30px);
+    height: clamp(25px, 5vw, 30px);
+  }
+  .menu {
+    width: 320px;
+  }
+  .menu-user-image {
+    width: clamp(60px, 40vw, 150px);
+    height: clamp(60px, 40vw, 150px);
+  }
+  .logout-button {
+    width: clamp(60px, 40vw, 100%);
+  }
+}

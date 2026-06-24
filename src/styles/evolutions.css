@@ -1,0 +1,70 @@
+.evolutions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.evolution-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1rem;
+    min-width: 120px;
+    max-width: 160px;
+    flex: 1 1 clamp(120px, 20%, 160px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.evolution-card:hover {
+    transform: scale(1.05);
+}
+
+.evolution-img {
+    width: clamp(50px, 18vw, 70px);
+    height: clamp(50px, 18vw, 70px);
+    object-fit: contain;
+    margin: 0px;
+}
+
+.evolution-info h3 {
+    margin: 0.5rem 0 0 0;
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.evolution-info p {
+    margin: 0.2rem 0;
+    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .evolutions-container {
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .evolution-card {
+        flex: 1 1 clamp(100px, 35%, 140px);
+        max-width: none;
+        padding: clamp(0.6rem, 2vw, 1rem);
+    }
+
+    .evolution-img {
+        width: clamp(40px, 20vw, 60px);
+        height: clamp(40px, 20vw, 60px);
+    }
+
+    .evolution-info h3 {
+        font-size: clamp(0.8rem, 2.5vw, 0.95rem);
+    }
+
+    .evolution-info p {
+        font-size: clamp(0.7rem, 2vw, 0.8rem);
+    }
+}

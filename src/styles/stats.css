@@ -1,0 +1,103 @@
+.stats-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.stats-header h2 {
+    color: #000;
+    text-align: center;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 0;
+}
+
+.stats-info {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+}
+
+.stat-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.stat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+
+.stat-row span {
+    font-weight: bold;
+    color: #000;
+    width: 50%;
+}
+
+.stat-name {
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 40%;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: clamp(0.7rem, 1.2vw, 1rem);
+}
+
+.stat-value {
+    text-align: right;
+    margin-bottom: 0.3rem;
+}
+
+.stat-bar-background {
+    width: 100%;
+    height: clamp(10px, 2vw, 16px);
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    transition: width 0.5s ease;
+}
+
+.total {
+    margin-top: 20px;
+    flex-direction: row;
+}
+
+.stat-row.total .stat-name,
+.stat-row.total .stat-value {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #000;
+}
+
+.stats-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 1vw, 1rem);
+    margin-top: 1rem;
+}
+
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.ability {
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    text-transform: capitalize;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
