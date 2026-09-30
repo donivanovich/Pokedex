@@ -32,7 +32,7 @@ Una Pokédex moderna construida con **React** que permite buscar, filtrar y expl
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/ikfstidea/Pokedex.git
+git clone https://github.com/donivanovich/Pokedex.git
 cd ./pokedex
 npm install
 npm run dev
